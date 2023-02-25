@@ -13,24 +13,20 @@ class APIManager {
     },
     
     getRandomUsers: function() {
-        this.data = this.fetchData(`https://randomuser.me/api/?format=json&results=7`)
-        return this.data
+      return this.data = this.fetchData(`https://randomuser.me/api/?format=json&results=7`)
     },
 
     getRandomQuote: function() {
-        this.data = this.fetchData(`https://api.kanye.rest`);
-        return this.data
+      return this.data = this.fetchData(`https://api.kanye.rest`);
     },
 
     getRandomPokemon: function() {
       let randomNumber = Math.floor(Math.random() * 949);
-      this.data = this.fetchData(`https://pokeapi.co/api/v2/pokemon/${randomNumber}/`);
-      return this.data
+      return this.data = this.fetchData(`https://pokeapi.co/api/v2/pokemon/${randomNumber}/`);
     },
 
     getRandomBacon: function() {
-      this.data = this.fetchData(`https://baconipsum.com/api/?type=all-meat&sentences=1`)
-      return this.data
+      return this.data = this.fetchData(`https://baconipsum.com/api/?type=all-meat&sentences=1`)
     }
   }
 }

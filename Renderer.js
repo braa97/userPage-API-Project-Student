@@ -1,6 +1,6 @@
 
 class Renderer {
-    GenericTemplateGenerator(element, source, data) {
+    TemplateGenerator(element, source, data) {
         $(`${element}`).empty()
         const genericSource = $(`${source}`).html()
         const template = Handlebars.compile(genericSource);

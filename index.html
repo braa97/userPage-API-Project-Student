@@ -51,7 +51,11 @@
     </script>
 
     <script id="pokemonInfo" type="text/x-handlebars-template">
-        <img id="pokemon-image" src="{{sprites.other.dream_world.front_default}}" />
+        {{#if sprites.other.dream_world.front_default}}
+            <img id="pokemon-image" src="{{sprites.other.dream_world.front_default}}" />
+        {{else}}
+            <img id="pokemon-image" src="{{sprites.front_default}}" />
+        {{/if}}
         <div id="pokemon-text">Pokemon name: {{name}}</div>
     </script>
  

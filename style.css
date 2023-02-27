@@ -115,7 +115,11 @@ button {
 
 #pokemon-text {
     vertical-align: middle;
-    margin-left: 5%;
+    margin-left: 8%;
+}
+
+#pokemon-text-bold {
+    margin-right: 3%;
 }
 
 .pokemon-container {

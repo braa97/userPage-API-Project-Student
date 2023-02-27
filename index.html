@@ -47,7 +47,7 @@
     </script>
 
     <script id="kanyeQuote" type="text/x-handlebars-template">
-           {{quote}}
+           <b>Favourite quote:</b> <br>{{quote}}
     </script>
 
     <script id="pokemonInfo" type="text/x-handlebars-template">
@@ -56,7 +56,7 @@
         {{else}}
             <img id="pokemon-image" src="{{sprites.front_default}}" />
         {{/if}}
-        <div id="pokemon-text">Pokemon name: {{name}}</div>
+        <div id="pokemon-text"><b id="pokemon-text-bold">Pokemon name:</b> {{name}}</div>
     </script>
  
     <script id="baconParagraph" type="text/x-handlebars-template">
